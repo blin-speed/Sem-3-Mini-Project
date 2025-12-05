@@ -1,0 +1,43 @@
+:root {
+  --color-bg: #090040;          /* deep dark purple background */
+  --color-text: #ffffff;        /* primary text */
+  --color-accent: #00ffc6;      /* accent teal */
+  --color-header: #471396;      /* header purple */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Root container for routed pages */
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Optional: global button styling */
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Optional: link styling */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

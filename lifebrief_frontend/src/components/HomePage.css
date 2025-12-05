@@ -1,0 +1,126 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #090040; /* deep purple background */
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.page-title {
+  margin: 0;
+  line-height: 60px;
+  font-size: 1.5rem;
+  /* manual adjustment */
+  margin-left: -40px; /* tweak this value until it looks centered */
+}
+
+.tile-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 100px; /* push below header */
+}
+
+.tile {
+  background: #471396; /* lighter purple surface */
+  color: #fff;
+  width: 250px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+.tile:hover {
+  transform: scale(1.05); /* subtle, even expansion */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+.tile-content {
+  text-align: center;
+  padding: 1rem;
+  transition: all 0.4s ease;
+}
+
+.tile-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.tile-desc {
+  font-size: 1rem;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+  color: #00ffc6; /* aqua accent for descriptions */
+}
+
+.tile:hover .tile-title {
+  opacity: 0;
+}
+
+.tile:hover .tile-desc {
+  opacity: 1;
+  max-height: 100px;
+}
+
+/* Logout button styled to match aqua accent */
+.page-header .btn-outline-light {
+  border-color: #00ffc6;
+  color: #00ffc6;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.page-header .btn-outline-light:hover {
+  background-color: #00ffc6;
+  color: #090040; /* deep purple text on hover */
+}
+
+/* Profile circle styled with aqua background */
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000000;
+  border-color: #00ffc6;
+  color: #00ffc6;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 255, 198, 0.7);
+}
+
+.profile-initial {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .tile-row {
+    gap: 1rem;
+  }
+  .tile {
+    width: 90%;
+    height: 180px;
+  }
+}

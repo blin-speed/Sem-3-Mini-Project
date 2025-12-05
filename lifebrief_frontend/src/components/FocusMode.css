@@ -1,0 +1,13 @@
+.app-container {
+  min-height: 100vh;
+  color: white;
+}
+
+.app-container.task {
+  background-color: red;
+}
+
+.app-container.meditation {
+  background-color: lightblue;
+  color: black;
+}
