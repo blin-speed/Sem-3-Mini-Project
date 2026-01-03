@@ -3,6 +3,7 @@ Team Members:
 Sumedh Malusare (Github = blin-speed)
 Divyash Mahadik (Github = divyash17)
 Amogh Sawant (Github = engg-amogh)
+Sanskruti Magar (Github = sanskruti5-fs)
 
 
 LifeBrief is an innovative, unified lifestyle management platform designed to seamlessly integrate personalized health guidance, focus enhancement, and task planning into a single, cohesive system. It addresses the common challenges faced by busy professionals who struggle to maintain a balanced lifestyle amidst demanding work schedules and fragmented digital tools.
